@@ -60,31 +60,3 @@ If you want to change where you want to connect, use `--url` flag. Example: `$ p
 For more information on the Command Line Interface (CLI) of server and client program, just run `python3 -m terminal_chatapp -h`, `python3 -m terminal_chatapp server -h`, or `python3 -m terminal_chatapp client -h`. This will show all the available and valid arguments for both client and server program.
 
 
-## Basic Usage With Picture
-1. We have three console opened here that we will use for showing how to use the server and client program.
-   
-   <img src="https://raw.githubusercontent.com/clediscover/terminal_chatapp/master/img_example/example-1.png" height="300">
-
-2. We run the server as root on the first console. It prints out the key that you will use for connecting the client. Also remember that you can change the password of the server using `--password` flag. But in this case, we will use the default password.
-   
-   <img src="https://raw.githubusercontent.com/clediscover/terminal_chatapp/master/img_example/example-2.png" height="200">
-
-3. We use the second console to connect to the server with given key from the server. It shows that the client program create its own username which is "user_4410" since we did not specify a username on the command and it shows from the server whose usename is connected and which path did the it go.
-
-    <img src="https://raw.githubusercontent.com/clediscover/terminal_chatapp/master/img_example/example-3.png" height="250">
-
-4. We connect the third console to the server and give it a username as "ace". The server shows again who connects and on both client, it shows how many client is connected to the server.
-   
-    <img src="https://raw.githubusercontent.com/clediscover/terminal_chatapp/master/img_example/example-4.png" height="250">
-
-5. We send "Hello" message from the first client (user_4410) and it shows the message to second client (ace). Keep in mind that, all message are encrypted before it sends to the websocket server.
-   
-    <img src="https://raw.githubusercontent.com/clediscover/terminal_chatapp/master/img_example/example-5.png" height="250">
-
-6. We send a "World" message using the second client (ace) and the first client receive it (user_4410).
- 
-    <img src="https://raw.githubusercontent.com/clediscover/terminal_chatapp/master/img_example/example-6.png" height="250">
-
-7. Last, we disconnect the second client by pressing `CTRL + C` and it can be seen from all the client that is connected to the server.
-
-    <img src="https://raw.githubusercontent.com/clediscover/terminal_chatapp/master/img_example/example-7.png" height="250">
